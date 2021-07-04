@@ -1,7 +1,8 @@
-package com.blogspot.howtouseinternet
+package com.blogspot.howtouseinternet.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.blogspot.howtouseinternet.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
