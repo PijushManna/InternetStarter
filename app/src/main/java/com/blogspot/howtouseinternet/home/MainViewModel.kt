@@ -1,4 +1,4 @@
-package com.blogspot.howtouseinternet
+package com.blogspot.howtouseinternet.home
 
 import androidx.lifecycle.ViewModel
 

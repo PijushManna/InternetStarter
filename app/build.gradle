@@ -1,13 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs'
 }
 
 android {
     compileSdkVersion 30
+
 
     buildFeatures{
         dataBinding true
@@ -36,11 +36,16 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    defaultConfig{
+        multiDexEnabled = true
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //Material Ui
+    implementation 'com.google.android.material:material:1.4.0'
     // Kotlin
     // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version_kotlin"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -85,4 +90,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+
+    //Multidex
+    implementation "androidx.multidex:multidex:$multidex_version"
 }

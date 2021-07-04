@@ -1,4 +1,4 @@
-package com.blogspot.howtouseinternet.home
+package com.blogspot.howtouseinternet
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
